@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiffrement de César</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Formulaire -->
+      <h1>Caesae Cypher</h1>
+      <p>Vanilla JS</p>
+      <div>
+        <form id="form" onsubmit="return false">
+          <label for="">Cypher key</label>
+          <input id="key" type="text" placeholder="Enter a number">
+          <input id="text" type="text" placeholder="Enter the text you wanna decrypt">
+          <button id="button" onclick="encrypt()">Cypher</button>
+        </form>
+        <p id="res"></p>
+      </div>
+    </form>
+  </body>
+</html>
