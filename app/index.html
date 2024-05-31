@@ -9,17 +9,35 @@
   </head>
   <body>
     <!-- Formulaire -->
-      <h1>Caesae Cypher</h1>
-      <p>Vanilla JS</p>
-      <div>
-        <form id="form" onsubmit="return false">
-          <label for="">Cypher key</label>
-          <input id="key" type="text" placeholder="Enter a number">
-          <input id="text" type="text" placeholder="Enter the text you wanna decrypt">
-          <button id="button" onclick="encrypt()">Cypher</button>
-        </form>
-        <p id="res"></p>
+    <div class="content">
+      <div class="title">
+        <p style="font-size: 25px; color: black"><b>Caesar Cypher</b></p>
+        Vanilla JS
       </div>
-    </form>
+      <div class="form">
+        <form id="form" onsubmit="return false">
+          <label for="key">Cypher key</label>
+          <input
+            data-cy="key"
+            id="key"
+            type="text"
+            placeholder="Enter a number"
+          /><br /><br />
+          <textarea
+            data-cy="text"
+            id="text"
+            placeholder="Enter the text you wanna decrypt"
+            style="height: 25%"
+          ></textarea
+          ><br /><br />
+          <button data-cy="submit" id="button" onclick="encrypt()">
+            Cypher
+          </button>
+        </form>
+      </div>
+      <div class="caesar-result">
+        <p data-cy="res" id="res"></p>
+      </div>
+    </div>
   </body>
 </html>
